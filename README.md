@@ -1,8 +1,8 @@
 # k8s_jmeter_demo
 
-## step 
+## use step 
 1. clone this demo project
-```https://github.com/bruce770405/k8s_jmeter_demo.git```
+<code>https://github.com/bruce770405/k8s_jmeter_demo.git</code>
 
 2. switch to this project root
 3. run command 
