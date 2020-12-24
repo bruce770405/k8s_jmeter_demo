@@ -1,24 +1,24 @@
 # k8s_jmeter_demo
 
 ## use step 
-clone this demo project
+1. clone this demo project
 ```
 https://github.com/bruce770405/k8s_jmeter_demo.git)
 ```
 
-switch to this project root
+2. switch to this project root
 
-run command
+3. run command
 ```
 gradlew build jibDockerBuild
 ```
 
-check tw.com.bruce/jmeter_demo image in local docker images
+4. check tw.com.bruce/jmeter_demo image in local docker images
 ```
 docker images
 ```
 
-run docker image
-````
+5. run docker image
+```
 docker run --publish=8080:8080 tw.com.bruce/jmeter_demo:0.0.1-SNAPSHOT
 ```
