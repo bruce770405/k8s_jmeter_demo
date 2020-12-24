@@ -7,10 +7,10 @@
 2. switch to this project root
 
 3. run command
-    gradlew build jibDockerBuild
+> gradlew build jibDockerBuild
 
 4. check tw.com.bruce/jmeter_demo image in local docker images
-    docker images
+> docker images
 
 5. run docker image
-    docker run --publish=8080:8080 tw.com.bruce/jmeter_demo:0.0.1-SNAPSHOT
+> docker run --publish=8080:8080 tw.com.bruce/jmeter_demo:0.0.1-SNAPSHOT
