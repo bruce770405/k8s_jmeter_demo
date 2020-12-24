@@ -1,0 +1,38 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.1'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+    id 'com.google.cloud.tools.jib' version '2.7.0'
+}
+
+group = 'tw.com.bruce'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+jib {
+    from {
+        image = 'adoptopenjdk/openjdk11:jre'
+    }
+    to {
+        image = 'tw.com.bruce/jmeter_demo'
+        tags = [project.version]
+    }
+    container {
+        jvmFlags = ['-Djava.security.egd=file:/dev/./urandom', '-Xms256m', '-Xmx512m']
+        ports = ['8080']
+        mainClass = 'tw.com.bruce.jmeterdemo.JmeterdemoApplication'
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
