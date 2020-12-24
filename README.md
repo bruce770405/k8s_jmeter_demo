@@ -2,7 +2,7 @@
 
 ## use step 
 clone this demo project
-code(https://github.com/bruce770405/k8s_jmeter_demo.git)
+code (https://github.com/bruce770405/k8s_jmeter_demo.git)
 
 switch to this project root
 
