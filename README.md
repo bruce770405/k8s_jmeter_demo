@@ -3,7 +3,6 @@
 ## use step 
 1. clone this demo project
 > https://github.com/bruce770405/k8s_jmeter_demo.git
-```hi```
 
 2. switch to this project root
 
