@@ -22,3 +22,5 @@ docker images
 ```
 docker run --publish=8080:8080 tw.com.bruce/jmeter_demo:0.0.1-SNAPSHOT
 ```
+
+6. use JMeter tool ,and open JMeterDemo.jmx
